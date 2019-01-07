@@ -11,12 +11,12 @@ import java.util.Set;
         int ans = 0, i = 0, j = 0;
         while (i < n && j < n) {
             // try to extend the range [i, j]
-            if (!set.contains(s.charAt(j))){
+            if (!set.contains(s.charAt(j))){  
                 set.add(s.charAt(j++));
-                ans = Math.max(ans, j - i);
+                ans = Math.max(ans, j - i);   //save the longest length
             }
             else {
-                set.remove(s.charAt(i++));
+                set.remove(s.charAt(i++));   //delete first element in set
                
             }
         }
