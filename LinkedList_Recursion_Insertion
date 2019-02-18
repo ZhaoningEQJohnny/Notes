@@ -1,0 +1,14 @@
+void Insert(NodeData* head, int data)
+{
+  if(head==NULL||data<head->data)    //traverse until find a node which is NULL  or its data smaller than insert data
+  {
+    NodeData* newData = new NodeData;   
+    newData->data = data;
+    newData->next = head;
+    head = newData;
+  }
+  else
+  {
+    insert(head->next, data);
+  }
+}
