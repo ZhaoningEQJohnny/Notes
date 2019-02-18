@@ -9,6 +9,6 @@ void Insert(NodeData* head, int data)
   }
   else
   {
-    insert(head->next, data);
+    insert(head->next, data); 
   }
 }
