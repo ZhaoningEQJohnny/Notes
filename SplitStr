@@ -11,3 +11,12 @@ static void SplitStr(string s, vector<string>& v, char c)
 	}
 	v.push_back(s.substr(count, s.size()));
 }
+
+int main()
+{
+	String line = " ";
+	char c = ' ';
+	vector<string> v;
+	SplitStr(line, v, c);
+	return 0;
+}
