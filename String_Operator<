@@ -1,0 +1,19 @@
+	if (lName1 != lName2)
+	{
+		for (int i = 0; i < lName1.length(); i++)
+		{
+			if (i + 1 > lName2.length())
+			{
+				return false;
+			}
+
+			if (lName1[i] < lName2[i])
+			{
+				return true;
+			}
+			if (lName1[i] > lName2[i])
+			{
+				return false;
+			}
+		}
+	}
