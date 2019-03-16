@@ -1,0 +1,23 @@
+
+	vector<string> tVec1, tVec2;
+
+	string title1 = getTitle();
+	string title2 = paraMovie.getTitle();
+	SplitStr(title1, tVec1, ' ');
+	SplitStr(title2, tVec2, ' ');
+
+	for (int i = 0; i < tVec1.size(); i++)
+	{
+		if (i + 1 > tVec2.size())
+			return false;
+		for (int j = 0; j < tVec1[i].length(); j++)
+		{
+			if (i + 1 > tVec2[i].length())
+				return false;
+			if (tVec1[i][j] < tVec2[i][j])
+				return true;
+			if (tVec1[i][j] > tVec2[i][j])
+				return false;
+		}
+	}
+  return false
