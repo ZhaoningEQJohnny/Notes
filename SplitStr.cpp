@@ -9,7 +9,9 @@ static void SplitStr(string s, vector<string>& v, char c)
 			count = i + 1;
 		}
 	}
-	v.push_back(s.substr(count, s.size()));
+	if (v.size() != 1)
+		v.push_back(s.substr(count, s.size()));
+
 }
 
 int main()
