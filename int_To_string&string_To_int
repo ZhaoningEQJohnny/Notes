@@ -1,0 +1,9 @@
+//int to string
+
+int i = 12; 
+cout << std::to_string(i) << endl; 
+
+
+//string to int
+string s = "12"; 
+int a = atoi(s.c_str()); 
